@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class TestThreadCheckArray {
 	public static void main(String[] args) {
