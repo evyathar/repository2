@@ -57,7 +57,7 @@ public class SharedData
 
 	/**
 	 * Returns the array field as an ArrayList of integers.
-	 * @return An ArrayList<Integer> representing the array field.
+	 * @return An {@code ArrayList<Integer>} representing the array field.
 	 */
 	public ArrayList<Integer> getArray() // Updated return type from int[] to ArrayList<Integer>
     {
