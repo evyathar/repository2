@@ -11,7 +11,7 @@ public class ThreadCheckArray implements Runnable
         this.sd = sd;    
         synchronized (sd) 
         {
-            array = sd.getArray(); // Updated to use ArrayList<Integer>
+            array = sd.getArray(); 
             b = sd.getB();
         }       
         winArray = new boolean[array.size()]; // Updated to use array.size() instead of array.length
