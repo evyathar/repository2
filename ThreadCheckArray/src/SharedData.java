@@ -44,12 +44,6 @@ public class SharedData
 		return winArray;
 	}
 
-	/**
-	 * Sets the winArray to the provided boolean array. 
-	 * @param winArray A boolean array that will be assigned to the winArray field.
-	 * Each element in the array represents the win status for a specific condition.
-	 */
-	
 	
 	/**
 	 * Sets the winArray to the provided boolean array.
