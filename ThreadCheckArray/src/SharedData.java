@@ -1,12 +1,12 @@
 public class SharedData 
 {
 	
-	private int [] array;
+	private ArrayNum<Integer> array;// Changed int[] to ArrayNum<Integer>  
 	private boolean [] winArray;
 	private boolean flag;
 	private final int b;
 	
-	public SharedData(int[] array, int b) {
+	public SharedData(ArrayNum<Integer> array, int b) { //change the signature of the method from int[] to ArrayNum<Integer
 		
 		this.array = array;
 		this.b = b;
@@ -22,11 +22,11 @@ public class SharedData
 		this.winArray = winArray;
 	}
 
-	public int[] getArray() 
-	{
-		return array;
-	}
-
+	public ArrayNum<Integer> getArray() // Updated return type from int[] to ArrayNum<Integer>
+    {
+        return array;
+    }
+	
 	public int getB() 
 	{
 		return b;
