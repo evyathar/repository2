@@ -1,4 +1,7 @@
 public class ThreadCheckArray implements Runnable 
+import java.util.ArrayList;
+
+
 {
 	private boolean flag;
 	private boolean [] winArray;
