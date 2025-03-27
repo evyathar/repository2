@@ -29,7 +29,7 @@ import java.util.ArrayList;
 	        }   
 	        if (n == 1)
 	        {
-	            if(b == 0 || b == array.get(n-1)) // Updated to use array.get(n-1)
+	            if(b == 0 || b == array.get(n-1)) 
 	            {
 	                flag = true;
 	                synchronized (sd) 
@@ -37,12 +37,12 @@ import java.util.ArrayList;
 	                    sd.setFlag(true);
 	                }           
 	            }
-	            if (b == array.get(n-1)) // Updated to use array.get(n-1)
+	            if (b == array.get(n-1)) 
 	                winArray[n-1] = true;
 	            return;
 	        }
 	        
-	        rec(n-1, b - array.get(n-1)); // Updated to use array.get(n-1)
+	        rec(n-1, b - array.get(n-1)); 
 	        if (flag)
 	            winArray[n-1] = true;
 	        synchronized (sd) 
@@ -60,7 +60,7 @@ import java.util.ArrayList;
 	            else 
 	                rec(array.size()-1, b);
 	        if (array.size() == 1) // Updated to use array.size() instead of array.length
-	            if (b == array.get(0) && !flag) // Updated to use array.get(0)
+	            if (b == array.get(0) && !flag) 
 	            {
 	                winArray[0] = true;
 	                flag = true;
