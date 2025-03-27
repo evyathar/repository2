@@ -1,12 +1,12 @@
 public class SharedData 
 {
-	//dddd
-	private ArrayNum<Integer> array;// Changed int[] to ArrayNum<Integer>  
+
+	private  ArrayList<Integer> array;// Changed int[] to ArrayList<Integer>  
 	private boolean [] winArray;
 	private boolean flag;
 	private final int b;
 	
-	public SharedData(ArrayNum<Integer> array, int b) { //change the signature of the method from int[] to ArrayNum<Integer
+	public SharedData(ArrayNum<Integer> array, int b) { //change the signature of the method from int[] to ArrayList<Integer
 		
 		this.array = array;
 		this.b = b;
@@ -22,7 +22,7 @@ public class SharedData
 		this.winArray = winArray;
 	}
 
-	public ArrayNum<Integer> getArray() // Updated return type from int[] to ArrayNum<Integer>
+	public ArrayNum<Integer> getArray() // Updated return type from int[] to ArrayList<Integer>
     {
         return array;
     }

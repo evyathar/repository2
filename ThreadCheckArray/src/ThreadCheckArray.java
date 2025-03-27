@@ -3,7 +3,7 @@ public class ThreadCheckArray implements Runnable
 	private boolean flag;
 	private boolean [] winArray;
 	SharedData sd;
-	ArrayNum<Integer> array; // Changed int[] to ArrayNum<Integer>
+	ArrayList<Integer> array; // Changed int[] to ArrayList<Integer>
 	int b;
 	
 	public ThreadCheckArray(SharedData sd) 
@@ -11,7 +11,7 @@ public class ThreadCheckArray implements Runnable
         this.sd = sd;    
         synchronized (sd) 
         {
-            array = sd.getArray(); // Updated to use ArrayNum<Integer>
+            array = sd.getArray(); // Updated to use ArrayList<Integer>
             b = sd.getB();
         }       
         winArray = new boolean[array.size()]; // Updated to use array.size() instead of array.length
