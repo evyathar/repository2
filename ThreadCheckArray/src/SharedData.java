@@ -1,6 +1,6 @@
 public class SharedData 
 {
-	//hi eviater!!
+	
 	private int [] array;
 	private boolean [] winArray;
 	private boolean flag;
