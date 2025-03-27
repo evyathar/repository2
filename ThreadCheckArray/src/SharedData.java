@@ -1,6 +1,6 @@
 public class SharedData 
 {
-	
+	//dddd
 	private ArrayNum<Integer> array;// Changed int[] to ArrayNum<Integer>  
 	private boolean [] winArray;
 	private boolean flag;
